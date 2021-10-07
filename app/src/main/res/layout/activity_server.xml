@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".p2p.server.ServerActivity">
+
+  <Button
+    android:id="@+id/btn_start_host"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="启动服务"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+    android:id="@+id/btn_send"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Send"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_start_host" />
+
+  <EditText
+    android:id="@+id/et_send"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="@+id/btn_send"
+    app:layout_constraintEnd_toStartOf="@+id/btn_send"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/btn_send" />
+
+  <TextView
+    android:id="@+id/tv_content"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:overScrollMode="ifContentScrolls"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_send" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
