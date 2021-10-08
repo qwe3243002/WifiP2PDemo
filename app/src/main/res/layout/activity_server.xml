@@ -7,7 +7,7 @@
   tools:context=".p2p.server.ServerActivity">
 
   <Button
-    android:id="@+id/btn_start_host"
+    android:id="@+id/btn_wifi_direct"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:text="启动服务"
@@ -21,7 +21,7 @@
     android:layout_height="wrap_content"
     android:text="Send"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/btn_start_host" />
+    app:layout_constraintTop_toBottomOf="@+id/btn_wifi_direct" />
 
   <EditText
     android:id="@+id/et_send"

@@ -11,6 +11,12 @@
     android:theme="@style/Theme.WifiP2PDemo">
     <activity
       android:exported="true"
+      android:name=".nearby.NearbyActivity" />
+    <activity
+      android:exported="true"
+      android:name=".p2p.WifiDirectActivity" />
+    <activity
+      android:exported="true"
       android:name=".MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -20,17 +26,17 @@
     </activity>
   </application>
   <uses-permission
-    android:name="android.permission.INTERNET"
-    android:required="true" />
-  <uses-permission
-    android:name="android.permission.ACCESS_WIFI_STATE"
-    android:required="true" />
-  <uses-permission
     android:name="android.permission.CHANGE_WIFI_STATE"
+    android:required="true" />
+  <uses-permission
+    android:name="android.permission.ACCESS_FINE_LOCATION"
+    android:required="true" />
+  <uses-permission
+    android:name="android.permission.INTERNET"
     android:required="true" />
 
   <uses-permission
-    android:name="android.permission.ACCESS_FINE_LOCATION"
+    android:name="android.permission.ACCESS_WIFI_STATE"
     android:required="true" />
 
 </manifest>

@@ -13,7 +13,6 @@ import android.net.wifi.p2p.WifiP2pInfo;
 import android.net.wifi.p2p.WifiP2pManager;
 import android.net.wifi.p2p.WifiP2pManager.ActionListener;
 import android.net.wifi.p2p.WifiP2pManager.Channel;
-import android.net.wifi.p2p.WifiP2pManager.PeerListListener;
 import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
@@ -115,7 +114,7 @@ public class P2pClient implements LifecycleObserver, WIFIP2pListener {
         return;
       }
       manager.cancelConnect(channel, null);
-      ((Activity) context).findViewById(R.id.btn_start_client).postDelayed(() -> {
+      ((Activity) context).findViewById(R.id.btn_nearby).postDelayed(() -> {
         manager.connect(channel, config, new WifiP2pManager.ActionListener() {
           @Override
           public void onSuccess() {

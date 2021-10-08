@@ -4,27 +4,26 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:padding="@dimen/default_padding"
-  tools:context=".MainActivity">
-
+  tools:context=".p2p.WifiDirectActivity">
 
   <Button
-    android:id="@+id/btn_wifi_direct"
-    android:layout_width="0dp"
+    android:id="@+id/btnStartHost"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="WIFI Direct"
-    app:layout_constraintBottom_toTopOf="@id/btn_nearby"
+    android:text="START HOST"
+    app:layout_constraintBottom_toTopOf="@id/btnStartClient"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
 
   <Button
-    android:id="@+id/btn_nearby"
-    android:layout_width="0dp"
+    android:id="@+id/btnStartClient"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="NearBy"
+    android:text="START CLIENT"
+    app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/btn_wifi_direct" />
+    app:layout_constraintTop_toBottomOf="@+id/btnStartHost" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
