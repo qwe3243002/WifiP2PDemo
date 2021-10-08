@@ -4,6 +4,33 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
+  android:padding="@dimen/default_padding"
   tools:context=".nearby.NearbyActivity">
 
+
+  <Button
+    android:id="@+id/btn_host"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Start Host"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+  <Button
+    android:id="@+id/btn_client"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Start Client"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_host" />
+
+  <TextView
+    android:id="@+id/tv_content"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/btn_client" />
 </androidx.constraintlayout.widget.ConstraintLayout>
